@@ -1,0 +1,32 @@
+
+
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col=lg-12 col-xl-12 col-xxl-12">
+
+
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">movie</th>
+                    <th scope="col">actor</th>
+                    <th scope="col">actress</th>
+                    <th scope="col">release</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of movie">
+                    <th scope="row">{{i.movie}}</th>
+                    <td>{{i.actor}}</td>
+                    <td>{{i.actress}}</td>
+                    <td>{{i.release}}</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+
+        </div>
+    </div>
+</div>
